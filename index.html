@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demineur</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div id="container" class="container">
+        <div id="timer" class="timer">
+            120 seconds
+        </div>
+        <select id="level" class="level" onchange="setLevel(this.value)">
+            <option value="">Niveau</option>
+            <option value="1">facile</option>
+            <option value="2">moyen</option>
+            <option value="3">difficile</option>
+        </select>
+        <div class="attempts"> Tentative restante :  <div id="attempts"></div> </div>
+        <div class="bombCount"> nombre de bombe :  <div id="bombCount"></div> </div>
+        <div id="minesGrid" class="minesGrid">
+
+        </div>
+
+        <button id="start" class="start" onclick="start()" disabled>start</button>
+
+    </div>
+    
+</body>
+<script src="index.js"></script>
+</html>
